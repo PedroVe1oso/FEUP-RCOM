@@ -13,7 +13,7 @@
 * Applications.
 
 ## Mandatory literature
-* [Andrew S. Tanenbaum, David J. Wetherall; Computer Networks, 5/E, Prentice Hall, 2011. ISBN: ISBN-10: 0132126958](https://www.mbit.edu.in/wp-content/uploads/2020/05/Computer-Networks-5th-Edition.pdf)
+* [Andrew S. Tanenbaum, David J. Wetherall; Computer Networks, 5/E, Prentice Hall, 2011. ISBN: ISBN-10: 0132126958](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Computer%20Networks.pdf)
 
 ## Course Info
 * **Course** : Computer Networks (RCOM)
