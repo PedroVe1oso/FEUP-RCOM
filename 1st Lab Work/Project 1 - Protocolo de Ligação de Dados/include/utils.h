@@ -11,6 +11,8 @@
 
 // Todas as tramas são delimitadas por flags ( 01111110 )
 #define FLAG 0x7E // 01111110
+// ESC é usado para substituir um octeto idêntico à FLAG que exista no interior da trama
+#define ESC 0x7D // 01111101
 
 // A (Campo de Endereço)
 #define A_T 0x03 // 00000011 Comandos enviados pelo Transmissor e Respostas enviadas pelo Receptor (T->R) -> (R->T)
