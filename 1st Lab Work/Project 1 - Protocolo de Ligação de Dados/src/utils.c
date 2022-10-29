@@ -5,6 +5,16 @@
 #include "../include/utils.h"
 #include "../include/macro.h"
 
+void alarm_handler(){
+
+    if(flagAttempts > ll.nRetransmissions){
+        flagAttempts=0;
+    }
+
+    flagAttempts++;
+    alarmEnabled = 1;
+}
+
 int Open_Transmitter(){
 
     unsigned char SET[] = {FLAG,A_T,C_SET,A_T ^ C_SET,FLAG};
