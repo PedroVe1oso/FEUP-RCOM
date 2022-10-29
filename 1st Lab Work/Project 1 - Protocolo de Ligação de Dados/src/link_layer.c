@@ -1,14 +1,8 @@
 // Link layer protocol implementation
 
-#include <signal.h>
-#include <time.h>
-
 #include "../include/link_layer.h"
 #include "../include/utils.h"
 #include "../include/macro.h"
-
-// MISC
-#define _POSIX_SOURCE 1 // POSIX compliant source
 
 ////////////////////////////////////////////////
 // LLOPEN
@@ -16,9 +10,7 @@
 int llopen(LinkLayer connectionParameters)
 {
     // First -> Set Serial Port
-    // TODO
-    //  implement function to set serial port
-    //  fd = Set_Serial_Port(connectionParameters);
+    fd = Set_Serial_Port(connectionParameters);
 
     // Ativa o alarm, alarmEnabled = TRUE e dá update ao número de tentativas de conexão
     (void) signal(SIGALRM, alarmHandler);

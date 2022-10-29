@@ -5,6 +5,17 @@
 #ifndef _MACRO_H_
 #define _MACRO_H_
 
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <termios.h>
+#include <stdio.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <time.h>
+
 // MISC
 #define FALSE 0
 #define TRUE 1
@@ -27,6 +38,12 @@
 #define C_SET       0x03    // 00000011 set up
 #define C_DISC      0x0B    // 00001011 disconnect
 #define C_UA        0x07    // 00000111 unnumbered acknowledgment
+
+//Valores default para a conexão
+#define DEFAULT_BAUDRATE B38400
+#define DEFAULT_MAX_RETRANSMISSIONS 3
+#define DEFAULT_TIMEOUT 4
+#define _POSIX_SOURCE 1 // POSIX compliant source
 
 // Alarm variables
 unsigned char flagAttempts = 0;
