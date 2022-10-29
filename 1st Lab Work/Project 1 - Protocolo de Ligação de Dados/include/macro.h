@@ -32,4 +32,8 @@
 unsigned char flagAttempts = 0;
 unsigned char alarmEnabled = FALSE;
 
+// Macros relevantes ao estabelecimento da ligação através da porta série
+LinkLayer ll;       // Linklayer used
+int fd;             // File descriptor
+
 #endif //_MACRO_H_

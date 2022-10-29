@@ -5,14 +5,14 @@
 #include "../include/utils.h"
 #include "../include/macro.h"
 
-void alarm_handler(){
+void alarmHandler(){
 
     if(flagAttempts > ll.nRetransmissions){
         flagAttempts=0;
     }
 
     flagAttempts++;
-    alarmEnabled = 1;
+    alarmEnabled = TRUE;
 }
 
 int Open_Transmitter(){
