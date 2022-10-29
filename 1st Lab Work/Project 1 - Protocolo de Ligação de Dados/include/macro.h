@@ -5,6 +5,10 @@
 #ifndef _MACRO_H_
 #define _MACRO_H_
 
+// MISC
+#define FALSE 0
+#define TRUE 1
+
 // Delimitação e cabeçalho
 
 // Todas as tramas são delimitadas por flags ( 01111110 )
