@@ -1,6 +1,8 @@
 // Link layer protocol implementation
 
+#include "../include/link_layer.h"
 #include "../include/utils.h"
+#include "../include/macro.h"
 
 // MISC
 #define _POSIX_SOURCE 1 // POSIX compliant source
