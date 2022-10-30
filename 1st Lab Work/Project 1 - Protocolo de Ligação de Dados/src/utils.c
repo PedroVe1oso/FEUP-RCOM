@@ -25,7 +25,7 @@ int Set_Serial_Port(LinkLayer connectionParameters){
         exit(-1);
     }
 
-    bzero(&newtio,sizeof(&newtio));  // preenche a newtio
+    memset(&newtio, 0, sizeof(newtio));
     newtio.c_cflag = DEFAULT_BAUDRATE | CS8 | CLOCAL | CREAD;
     newtio.c_iflag = IGNPAR;
     newtio.c_oflag = 0;
