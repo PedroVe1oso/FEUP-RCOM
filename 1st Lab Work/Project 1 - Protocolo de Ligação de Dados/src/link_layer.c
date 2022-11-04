@@ -249,9 +249,9 @@ int Open_Receiver(){
     int state=0;
 
     unsigned char SET[] = {FLAG,A_T,C_SET,A_T ^ C_SET,FLAG};
-    int res = 0;
+    int res;
 
-    while(STOP  == FALSE){
+    while(STOP == FALSE){
         res = read(fd,&word,1); // read 1 word
         if(res>0){
             Check_State_Machine(word,&state,SET);
@@ -530,7 +530,7 @@ int Receive_Data(char *packet){
 
         unsigned char RR[] = {FLAG,A_T,C_RR(SequenceNumber),A_T ^ C_RR(SequenceNumber),FLAG}; // Receiver Ready / positive ACK
         if(write(fd,RR,5) < 0){
-            //perror("Error writing to serial port");
+            perror("Error writing to serial port");
             return -1;
         }
 
